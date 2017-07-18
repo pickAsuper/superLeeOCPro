@@ -1,0 +1,52 @@
+//
+//  HaoBan.pch
+//  HaoBan
+//
+//  Created by bing.hao on 2016/11/8.
+//  Copyright © 2016年 tsingda. All rights reserved.
+//
+
+
+
+#import "LCSuperConst.h"
+
+#define kFB_BASE_URL @"http://www.training-faw-mazda.com/app/"
+
+#define KS_SCREEN_BOUNDS [[UIScreen mainScreen] bounds]
+#define KSSCREENW  KS_SCREEN_BOUNDS.size.width
+#define KSSCREENH  KS_SCREEN_BOUNDS.size.height
+
+#define TOOLK [HBUserToolkit shared]
+
+
+//根据像素大小获取一个PT值
+#define PX(v) ((v) * 1.0f / 2)
+//根据像素大小获取一个加粗的字体
+#define FB(v) [UIFont boldSystemFontOfSize:((v) * 1.0f / 2)]
+//根据像素大小获取一个字体
+#define FN(v) [UIFont systemFontOfSize:((v) * 1.0f / 2)]
+// 获取缩略图
+#define ThumbnailURLString(URL, width, height) [NSString stringWithFormat:@"%@?w=%zd&h=%zd", URL, width, height]
+
+//全局导航背景颜色
+#define G_NAV_BG_COLOR  [UIColor blackColor]
+
+//全局导航字体颜色
+#define G_NAV_FONT_COLOR CHEX(0xffffff)
+
+#define FONT_PX(v)     [UIFont systemFontOfSize:(v / 2.0f)]
+
+
+#define kBackgroundLightGrayColor  [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1] // 主背景色 淡灰色
+
+#define kMainColor  [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1] // 白色
+
+
+// 获取缩略图
+#define KSThumbnail(URL, width, height) [NSString stringWithFormat:@"%@?w=%zd&h=%zd", URL, width, height];;
+
+
+#define totalLine RGB(202, 196, 198)
+
+#define BottomViewH 80
+#define SelectionIndicatorColor RGB(244, 188, 48)
